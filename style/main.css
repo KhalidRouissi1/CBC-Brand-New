@@ -1,4 +1,4 @@
-.liveRadio .player .fotOfRadio, .liveRadio .player, .liveRadio, .liveRadio .par, .myLocal .downNews, .myLocal .title, .news .downNews, .news .cover .title, .landing .container .box2 .event .sound .wave, .landing .container .box2 .event h2, .landing .container .box1 .downNews, .landing .container .box1 .new1, .landing .container, .newThings, .categories, header .container .partTwo, header .container .partOne, header .container {
+.member .GemNav .partThree, .member .GemNav .partTwo ul, .member .GemNav, .liveRadio .player .fotOfRadio, .liveRadio .player, .liveRadio, .liveRadio .par, .myLocal .downNews, .myLocal .title, .news .downNews, .news .cover .title, .landing .container .box2 .event .sound .wave, .landing .container .box2 .event h2, .landing .container .box1 .downNews, .landing .container .box1 .new1, .landing .container, .newThings, .categories, header .container .partTwo, header .container .partOne, header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,6 +260,7 @@ header .container .partTwo .signIn {
 }
 .landing .container .box2 .event img {
   width: 200px;
+  border-radius: 13px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -374,7 +375,9 @@ header .container .partTwo .signIn {
   font-weight: bold;
   font-size: 17px;
 }
-.news .downNews .new span {
+.news .downNews .new .category {
+  width: 5px;
+  text-align: center;
   color: #c4c4c4;
 }
 .news .downNews .new img {
@@ -566,4 +569,71 @@ header .container .partTwo .signIn {
 }
 .liveRadio .player .more img {
   width: 100px;
+}
+
+.member {
+  margin-top: 50px;
+  padding: 50px 10px;
+  width: 100%;
+  background-color: #191919;
+}
+.member .GemNav {
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.member .GemNav img {
+  width: 150px;
+}
+.member .GemNav .partTwo ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  list-style: none;
+}
+.member .GemNav .partTwo ul a {
+  text-decoration: none;
+  color: white;
+}
+.member .GemNav .partTwo ul a li {
+  padding: 5px 25px;
+  background-color: #292929;
+  border-radius: 15px;
+}
+.member .GemNav .partTwo ul .redDot {
+  position: relative;
+}
+.member .GemNav .partTwo ul .redDot::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #cf2730;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+  border-radius: 50px;
+}
+.member .GemNav .partThree {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+.member .GemNav .partThree .place {
+  color: #c4c4c4;
+}
+.member .GemNav .partThree .signIn {
+  padding: 10px 20px;
+  border: #cf2730 1px solid;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #f8f8f8;
+  background-color: #cf2730;
+  cursor: pointer;
 }

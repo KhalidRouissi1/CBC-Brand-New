@@ -1,6 +1,7 @@
 $grayColor : #c4c4c4 ; 
 $redColor : #cf2730;
 $altBg : #f8f8f8;
+$gemColor : #191919;
 %Flex-Row{
     display: flex;
     flex-direction: row;
@@ -253,6 +254,7 @@ header{
 
                 img{
                     width: 200px;
+                    border-radius: 13px;
                     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
                 }
@@ -359,8 +361,12 @@ header{
                 font-weight: bold;
                 font-size: 17px;
             }
-            span{
+
+            .category{
+                width:5px;
+                text-align: center;
                 color: $grayColor;
+
             }
 
 
@@ -559,6 +565,82 @@ header{
     }
 
  
+}
+
+
+
+.member{
+    margin-top: 50px;
+    padding: 50px 10px;
+    width: 100%;
+    background-color: $gemColor;
+    .GemNav{
+    width: 100%;
+
+        @extend %Flex-Row;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            width: 150px;
+        }
+
+        .partTwo{
+            ul{
+                @extend %Flex-Row;
+                justify-content: center;
+                gap: 10px;
+                list-style: none;   
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    li{
+                        padding: 5px 25px;
+                        background-color: #292929;
+                        border-radius: 15px;
+                        
+                    }
+                
+                }
+
+                .redDot{
+                    position: relative;
+                }
+                .redDot::after{
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background-color: $redColor;
+                    top: 50%;
+                    transform:translateY(-50%);
+                    right: 10px;
+                    border-radius: 50px;
+                }
+              
+            }
+    
+               
+        }
+    
+        .partThree{
+            @extend %Flex-Row;
+            align-items: center;
+            gap: 50px;
+            .place{
+                color: $grayColor;
+            }
+                .signIn{
+            padding: 10px 20px;
+            border: $redColor 1px solid;
+            border-radius: 30px;
+            text-decoration: none;
+            color: $altBg;
+            background-color: #cf2730;
+            cursor: pointer;
+        }
+        }
+    }
 }
 
 
