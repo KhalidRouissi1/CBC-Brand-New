@@ -1,4 +1,4 @@
-.member .GemNav .partThree, .member .GemNav .partTwo ul, .member .GemNav, .liveRadio .player .fotOfRadio, .liveRadio .player, .liveRadio, .liveRadio .par, .myLocal .downNews, .myLocal .title, .news .downNews, .news .cover .title, .landing .container .box2 .event .sound .wave, .landing .container .box2 .event h2, .landing .container .box1 .downNews, .landing .container .box1 .new1, .landing .container, .newThings, .categories, header .container .partTwo, header .container .partOne, header .container {
+.moreFromCbc .container, .moreFromCbc .title, .watchNow .container .newSlider .new, .watchNow .container, .watchNow h1, .watch .container, .watch .title, .member .GemNav .partThree, .member .GemNav .partTwo ul, .member .GemNav, .liveRadio .player .fotOfRadio, .liveRadio .player, .liveRadio, .liveRadio .par, .myLocal .downNews, .myLocal .title, .news .downNews, .news .cover .title, .landing .container .box2 .event .sound .wave, .landing .container .box2 .event h2, .landing .container .box1 .downNews, .landing .container .box1 .new1, .landing .container, .newThings, .categories, header .container .partTwo, header .container .partOne, header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,6 +19,17 @@
 
 .arrowHead {
   border: 5px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: black;
+  display: block;
+  width: 0px;
+  height: 0px;
+}
+
+.arrowHead-XL {
+  border: 8px solid transparent;
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
@@ -635,5 +646,318 @@ header .container .partTwo .signIn {
   text-decoration: none;
   color: #f8f8f8;
   background-color: #cf2730;
+  cursor: pointer;
+}
+
+.watch {
+  width: 90%;
+  margin: 50px auto;
+}
+.watch .title {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.watch .title .arrowHead-XL {
+  color: white;
+  border-left-color: white;
+}
+.watch .container {
+  width: 80%;
+  margin: 50px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+.watch .container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.watch .container .box img {
+  border-radius: 10px;
+  width: 250px;
+}
+.watch .container .box .sub-title {
+  margin-top: 15px;
+  color: #cf2730;
+  font-size: 18px;
+}
+.watch .container .box h3 {
+  color: white;
+  font-size: 20px;
+}
+.watch .container .box .cat {
+  color: #c4c4c4;
+  font-size: 18px;
+}
+
+.watchNow {
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 50px auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.watchNow h1 {
+  margin: 20px;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.watchNow .container {
+  width: 90%;
+  margin: 50px auto;
+  width: 90%;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 10px;
+}
+.watchNow .container .new h2 {
+  font-size: 20px;
+}
+.watchNow .container .new .videoOpener {
+  width: 500px;
+  border-radius: 10px;
+  position: relative;
+}
+.watchNow .container .new span {
+  color: #c4c4c4;
+}
+.watchNow .container .newSlider {
+  scroll-behavior: smooth;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 500px;
+}
+@supports (scrollbar-color: #cf2730 #f8f8f8) {
+  .watchNow .container .newSlider {
+    scrollbar-width: thin;
+    scrollbar-color: #cf2730 #f8f8f8;
+  }
+}
+.watchNow .container .newSlider .new {
+  gap: 15px;
+}
+.watchNow .container .newSlider .new .info {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.watchNow .container .newSlider .new .info h3 {
+  font-size: 17px;
+  width: 210px;
+  font-weight: bold;
+}
+.watchNow .container .newSlider .new .videoOpener2 {
+  position: relative;
+  width: 180px;
+  border-radius: 15px;
+}
+.watchNow .newSlider::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+.watchNow .newSlider::-webkit-scrollbar-track {
+  background-color: #f8f8f8;
+}
+.watchNow .newSlider::-webkit-scrollbar-thumb {
+  background-color: rgba(207, 39, 48, 0.8784313725);
+  border-radius: 10px;
+  height: 5px;
+  margin-block: 0.5em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.watchNow .newSlider::-webkit-scrollbar-thumb:hover {
+  background-color: #cf2730;
+  width: 10px;
+  height: 10px;
+}
+
+.moreFromCbc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: 50px auto;
+}
+.moreFromCbc .title {
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.moreFromCbc .container {
+  gap: 30px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.moreFromCbc .container .box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.moreFromCbc .container .box1 ul {
+  list-style: none;
+}
+.moreFromCbc .container .box1 ul h3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+.moreFromCbc .container .box1 ul span {
+  color: #c4c4c4;
+  font-size: 16px;
+}
+.moreFromCbc .container .box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+.moreFromCbc .container .box2 img {
+  border-radius: 10px;
+  height: 500px;
+  width: 300px;
+}
+.moreFromCbc .container .box2 .info p {
+  color: black;
+  font-size: 15px;
+  width: 290px;
+}
+.moreFromCbc .container .box2 .info span {
+  color: #c4c4c4;
+}
+.moreFromCbc .container .box3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.moreFromCbc .container .box3 img {
+  width: 300px;
+  border-radius: 15px;
+}
+.moreFromCbc .container .box3 .info p {
+  color: black;
+  width: 300px;
+}
+.moreFromCbc .container .box3 .info span {
+  color: #c4c4c4;
+}
+
+.sub {
+  background-color: #cf2730;
+  margin: 50px auto;
+}
+.sub .container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sub .container .title h1 {
+  color: white;
+  font-size: 30px;
+}
+.sub .container .mail input {
+  margin: 20px;
+  border: none;
+  outline: none;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  width: 400px;
+  padding: 10px 10px;
+}
+.sub .container .mail .join {
+  padding: 10px 30px;
+  border: #cf2730 1px solid;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #cf2730;
+  background-color: white;
   cursor: pointer;
 }
