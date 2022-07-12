@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/fontawesome.min.css">
     <link rel="icon" type="image/x-icon" href="assest/cbclogo">
-    
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body onload="addYearOfCopyRight()">
 
 
     <header>
@@ -344,10 +344,47 @@
             </a>
         </div>
     </div>
-    <div class="slider">
-        
-    </div>
 
+    <div class="GemHead">
+        <h1>Become a Conne CBC Member</h1>
+        <p>Create a free account to stream exclusive series and live local Tv from across Canada</p>
+        <button>Create an account</button>
+    </div>
+    <div class="slider">
+
+        <div class="container">
+
+            
+            <button class="switchLeft" onclick="slideToLeft()"><i class="fa-solid fa-angle-left" ></i></button>
+            <button class="switchRight" onclick="slideToRight()"><i class="fa-solid fa-angle-right"></i></button>
+            <div class="sliderFun">
+
+            <div class="silderBox">
+                <img src="assest/maxresdefault.jpg" alt="">
+                <h3 class="main-title">NEW SEASON</h3>
+                <h3 class="title">The Porter</h3>
+                <p>Inspired by real events and set in the roar of the 1920s, THE PORTER follows the journeys of an ensemble of characters who hustle, dream, cross borders and pursue their ambitions in the fight for liberation - on and off the railways that crossed North America.</p>
+            </div>
+            <div class="silderBox">
+                <img src="assest/TallBoyz3.JPG" alt="">
+                <h3 class="main-title">NEW SEASON</h3>
+                <h3 class="title">TALLBOYZ</h3>
+                <p>The TALLBOYZ return with sketches raning from being filled with fantastical realism, like making a deal with the devil, the comedic takes on vulnerability, anti-racism and even Anne with an 'E'.</p>
+            </div>
+            <div class="silderBox">
+                <img src="assest/cbc_triggerpoint_carousel_v04.jpg" alt="">
+                <h3 class="main-title">NEW SEASON</h3>
+                <h3 class="title">Trigger Point</h3>
+                <p>Lana Washington is an ex-military bomb disposal operative (known as an 'Expo') and Afghan War veteran who heads a Metropolitan Police bomb squad, using her skills to counter the terrorist threat.
+
+                </p>
+            </div>
+        </div>
+
+        </div>
+        
+        
+    </div>  
     <div class="watch">
         <div class="title">Watch on CBC Gem <span class="arrowHead-XL"></span></div>
         <div class="container">
@@ -526,10 +563,93 @@
     </div>
 
     <footer>
-        
+        <div class="logo">
+            <img src="assest/CBC_logo.svg.png" alt="">
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-reddit-alien"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <ul>
+                    <li ><a href="#" class="active">My Account</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">CBC Gem</a></li>
+                    <li><a href="#">Newsletters</a></li>
+                    <li><a href="#">About CBC</a></li>
+                    <li><a href="#">About CBC Membership</a></li>
+                </ul>
+            
+                <ul>
+                    <li ><a class="active" href="#">Connect with CBC</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Instgram</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">RSS</a></li>
+                    <li><a href="#">Podcasts</a></li>
+                </ul>
+            
+                <ul>
+                    <li ><a class="active" href="#">Contact CBC</a></li>
+                    <li><a href="#">Submit Feedback</a></li>
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#" class="alt">Toll-free(Canada only) 1-866-306-4636 TTY/Teletype write : 1-866-220-6045</a></li>
+                    <li><a href="#" class="alt">Audience Relations, CBC PO. Box 500 Station A Toronto, ON Canada, M5W 1E6</a></li>
+                </ul>
+            
+                <ul>
+                    <li ><a class="active" href="#">About CBC</a></li>
+                    <li><a href="#">Corporate info</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Reuse & Permission</a></li>
+                    <li><a href="#">Term of Use</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Our Unions</a></li>
+                    <li><a href="#">Indepndent  Producers</a></li>
+                    <li><a href="#">Political Ads Registry</a></li>
+                    <li><a href="#">AdChoices</a></li>
+                </ul>
+            
+                <ul>
+                    <li><a  class="active" href="#">Services</a></li>
+                    <li><a href="#">Ombudsman</a></li>
+                    <li><a href="#">Corrections and Clarifications</a></li>
+                    <li><a href="#">Public Apperances</a></li>
+                    <li><a href="#">Commercial Servecies</a></li>
+                    <li><a href="#">CBC Shop</a></li>
+                    <li><a href="#">Doing Business With Us</a></li>
+                    <li><a href="#">Renting Facilities</a></li>
+                    <li><a href="#">Radio Canada International</a></li>
+                </ul>
+            
+                <ul>
+                    <li><a  class="active" href="#">Accessibility</a></li>
+                    <li><a href="#">About CBC Accessibility </a></li>
+                    <li><a href="#">Accessibility Feedback</a></li>
+                    <li><a href="#" class="alt">It is a website that is accessible to all Canadians including people with visual, hearing, motor and congnitive challenges</a></li>
+                    <li><a href="#" class="alt">Closed Captioning and Described Video is available for many CBC shows offered on CBC Gem.</a></li>
+                </ul>
+            </div>
+            
+
+
+
+        </div>
     </footer>
 
-    <script src="script/all.min.js"> </script>
+    <div class="copyRight">
+        <span class="copyright" ></span>
+        <span><a href="#">Visite Radio-Canada.ca</a></span>
+    </div>
+
+    <script src="script/main.js"> </script>
 </body>
 
 </html>
