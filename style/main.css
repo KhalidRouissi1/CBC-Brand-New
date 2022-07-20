@@ -60,7 +60,7 @@ header .container .partOne img {
 header .container .partOne a {
   text-decoration: none;
 }
-header .container .partOne a svg {
+header .container .partOne a i {
   color: #c4c4c4;
 }
 header .container .partOne a span {
@@ -197,6 +197,17 @@ header .container .partTwo .signIn {
 }
 .landing .container .box1 .new1 .title {
   color: #cf2730;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;
+  /* fallback */
+  max-height: 32px;
+  /* fallback */
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
 .landing .container .box1 .new1 h3 {
   width: 225px;
